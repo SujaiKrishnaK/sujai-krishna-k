@@ -8,7 +8,7 @@ const { name, specialty, summary, email } = Astro.props;
 ---
 
 <section 
-  class="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen sm:h-full overflow-hidden bg-[#121820]" 
+  class="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-screen w-screen sm:h-full overflow-hidden bg-[#121820]" 
   id="hero"
 >
   <div class="relative z-10 grid w-full items-center gap-0 md:grid-cols-12">
@@ -42,7 +42,7 @@ const { name, specialty, summary, email } = Astro.props;
       </div>
     </div>
 
-    <div class="absolute sm:relative order-2 h-full w-full overflow-hidden md:order-2 md:col-span-5 md:h-screen pointer-events-none">
+    <div class="absolute top-40 sm:relative order-2 h-full w-full md:order-2 md:col-span-5 md:h-screen pointer-events-none">
       <div 
         class="h-full w-full mix-blend-luminosity sm:opacity-60 opacity-25"
         style="mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%); mask-composite: intersect; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%); -webkit-mask-composite: source-in;"
